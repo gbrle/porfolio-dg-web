@@ -26,6 +26,7 @@
     <link rel="apple-touch-icon" sizes="144x144" href="apple-touch-icon-144x144.png" />
     <link rel="apple-touch-icon" sizes="152x152" href="apple-touch-icon-152x152.png" />
 </head>
+
 <body class="state1 background-100-e">
 {#<div class="ext-nav background-95-h page-transition">
     <div class="view half-height">
@@ -76,24 +77,34 @@
 
 <!-- HOME -->
 <section id="home" class="lines" style="background: black">
+
     <div class="line"></div>
     <div class="line"></div>
     <div class="line"></div>
     <div class="view">
-{#        <img src="https://images.ctfassets.net/od02wyo8cgm5/Dvl1w1J0nx47AYEC8oSdX/900428f2ef76cb61406d66b1f175bc00/lightweight_cap-fw19-black-m-g2.png?w=1400&h=1400&fl=progressive&q=61&bg=rgb:f7f7f7&fm=jpg" style="position: absolute; right: 1px; opacity: 0.8">#}
+        <div id="nav" class="wrapcircles closed">
+            <div class="circleNav c-1"><span><a class="linkCircle" href="#">Acces client</a></span></div>
+            <div class="circleNav c-2"><span><a class="linkCircle" href="https://www.linkedin.com/in/david-gabriele/" target="_blank">LinkedIn</a></span></div>
+            <div class="circleNav c-3"><span><a class="linkCircle" href="https://codepen.io/Chrisstar">Facebook</a></span></div>
+            <div class="circleNav c-4"><span><a class="linkCircle" href="https://github.com/gbrle" target="_blank">GitHub</a></span></div>
+            <div id="click" class="circleNav c-5"><span><a class="linkCircle"></a></span></div>
+        </div>
+        <img src="images/portfolio/fond-profil-tranparent.png" style="position: absolute; left: 0; bottom: 0;opacity: 0.8">
         <div class="content home-mary full-size colors-a">
             <div class="container">
 
-                <div class="textillate text-center heading" data-textillate-options="{loop:true, in:{effect:'flipInY', reverse:false}, out:{effect:'flipOutY', reverse:false}}">
+                <h1 class="text-center">David <span class="highlight">Gabriele</span></h1>
+
+                <div style="padding-bottom: 35px" class="textillate text-center heading" data-textillate-options="{loop:true, in:{effect:'flipInY', reverse:false}, out:{effect:'flipOutY', reverse:false}}">
                     <ul class="texts">
-                        <li>DAVID GABRIELE</li>
+                        <li>Développeur Web sur Lyon</li>
                         <li>PHP / Symfony</li>
                         <li>Javascript</li>
                         <li>Passionné</li>
                         <li>Autodidacte</li>
                     </ul>
                 </div>
-                <h1 class="text-center">DEVELOPPEUR <span class="highlight">WEB</span></h1>
+
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
                         <p class="lead text-center">
@@ -103,7 +114,7 @@
                         <p class="text-center container-fluid">
                             <a style="cursor: crosshair" data-toggle="modal" data-target="#qui-suis-je" class="button background-60-dark heading-f border-hard animated bounceInDown">Qui suis-je ?</a>
                             <a style="cursor: crosshair" data-toggle="modal" data-target="#diplomes-certif" class="button background-60-dark heading-f border-hard animated bounceInRight">Diplomes & Certif'</a>
-                            <a style="cursor: crosshair" data-toggle="modal" data-target="#competences" class="button background-60-dark heading-f border-hard animated bounceInDown">Comtétences</a>
+                            <a style="cursor: crosshair" data-toggle="modal" data-target="#competences" class="button background-60-dark heading-f border-hard animated bounceInDown">Compétences</a>
                             <a style="cursor: crosshair" data-toggle="modal" data-target="#team" class="button background-60-dark heading-f border-hard animated bounceInLeft">Team</a>
                             <a style="cursor: crosshair" data-toggle="modal" data-target="#parcours-realisations" class="button background-60-dark heading-f border-hard animated rotateIn">Parcours & Réalisations</a>
                             <a style="cursor: crosshair" data-toggle="modal" data-target="#services" class="button background-60-dark heading-f border-hard animated fadeInUp">Services</a>
@@ -135,7 +146,7 @@
             <div class="modal-body">
 
                 <section id="about" style="background: white;">
-                    <img alt class="bgSections" src="images-sections/profil.png"/>
+                    <img alt class="bgSectionsQuiSuisJe" src="images-sections/profil.png"/>
 
                     <div class="view">
                         <div class="content colors-e">
@@ -224,7 +235,7 @@
             <div class="modal-body">
 
                 <section id="diplome-certifications" style="background: white; position: relative">
-                    <img alt class="bgSections" src="images-sections/certif.png"/>
+                    <img alt class="bgSectionsDiplomes" src="images-sections/certif.png"/>
 
                     <div class="view">
                         <div class="content colors-e">
@@ -356,7 +367,7 @@
             <div class="modal-body">
 
                 <section id="about" style="background: white; position: relative">
-                    <img alt class="bgSections" src="images-sections/brain.png"/>
+                    <img alt class="bgSectionsCompetences" src="images-sections/brain.png"/>
 
                     <div class="view">
                         <div class="content colors-e">
@@ -466,7 +477,7 @@
                         <div class="content colors-e background-solid" style="position: relative">
 
                             <div class="container">
-                                <img alt class="bgTeam" src="images-sections/team.png"/>
+                                <img alt class="bgSectionsTeam" src="images-sections/team.png"/>
 
                                 <h2><span class="highlight">T</span>eam</h2>
 
@@ -583,7 +594,7 @@
                         <div class="content colors-e background-solid" style="position: relative">
 
                             <div class="container">
-                                <img alt class="bgTeam" src="images-sections/team.png"/>
+                                <img alt class="bgSectionsParcours" src="images-sections/team.png"/>
 
                                 <h2>Parcours <span class="highlight">&</span> Réalisations</h2>
 
@@ -836,7 +847,7 @@
                         <div class="content colors-e background-solid" style="position: relative">
 
                             <div class="container">
-                                <img alt class="bgTeam" src="images-sections/team.png"/>
+                                <img alt class="bgSectionsServices" src="images-sections/team.png"/>
 
                                 <h2><span class="highlight">S</span>ervices</h2>
 
@@ -936,7 +947,7 @@
                         <div class="content colors-e background-solid" style="position: relative">
 
                             <div class="container">
-                                <img alt class="bgTeam" src="images-sections/team.png"/>
+                                <img alt class="bgSectionsContact" src="images-sections/team.png"/>
 
                                 <h2><span class="highlight">C</span>ontact</h2>
 
@@ -963,7 +974,7 @@
                                                     <div class="help-block"></div>
                                                 </div>
                                                 <div class="col-md-12 form-actions">
-                                                    <input class="button" type="submit" value="Envoyer" style="background: orange; color: black">
+                                                    <input class="button" type="submit" value="Envoyer" style="background: #cb875f; color: white">
                                                 </div>
                                             </div>
                                         </form>
@@ -1005,6 +1016,12 @@
 <script src="bower_components/textillate/assets/jquery.fittext.js"></script>
 <script src="bower_components/textillate/jquery.textillate.js"></script>
 <script src="lib/prism/prism.js"></script>
+
+<script>
+    $("#click").click(function(){
+        $("#nav").toggleClass("closed");
+    });
+</script>
 <script>
     (function()
     {
