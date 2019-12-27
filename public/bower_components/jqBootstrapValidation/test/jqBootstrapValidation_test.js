@@ -135,7 +135,7 @@
       
       test('rejects invalid', invalidEmails.length * numInJQBVTest, function() {
         $(invalidEmails).each(function (i, el) {
-            runJQBVTest(el, ["warning"], ["error"], ["Not a valid email address"], ["Not a valid email address"]);
+            runJQBVTest(el, ["warning"], ["error"], ["L'email n'est pas valide"], ["L'email n'est pas valide"]);
         });
       });
     })();
@@ -197,7 +197,7 @@
       
       test('rejects invalid', invalidEmails.length * numInJQBVTest, function() {
         $(invalidEmails).each(function (i, el) {
-            runJQBVTest(el, ["warning"], ["error"], ["Not a valid email address"], ["Not a valid email address"]);
+            runJQBVTest(el, ["warning"], ["error"], ["L'email n'est pas valide"], ["L'email n'est pas valide"]);
         });
       });
     })();

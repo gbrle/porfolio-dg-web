@@ -192,7 +192,7 @@
             //                                                     EMAIL
             // ---------------------------------------------------------
             if ($this.attr("type") !== undefined && $this.attr("type").toLowerCase() === "email") {
-              message = "Not a valid email address<!-- data-validation-email-message to override -->";
+              message = "L'email n'est pas valide<!-- data-validation-email-message to override -->";
               if ($this.data("validationEmailMessage")) {
                 message = $this.data("validationEmailMessage");
               }
@@ -767,7 +767,7 @@
           var result = {};
           result.regex = regexFromString('[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}');
           
-          var message = "Not a valid email address";
+          var message = "L'email n'est pas valide";
           if ($this.data("validation" + name + "Message")) {
             message = $this.data("validation" + name + "Message");
           }
