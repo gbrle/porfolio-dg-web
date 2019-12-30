@@ -5892,6 +5892,7 @@ html {
     border: 2px solid #f0f0f0;
 }
 .backRealisations .innerRealisations {
+    background: white;
     grid-template-rows: 1fr 2fr 1fr 2fr 35fr 1fr 1fr;
     grid-template-columns: repeat(4, auto);
     grid-column-gap: 0.8em;
