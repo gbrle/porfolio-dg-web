@@ -5798,9 +5798,6 @@ html {
     flex-flow: row wrap;
     justify-content: center;
 }
-.cardRealisations:hover {
-    border: 3px solid white;
-}
 
 .cardRealisations {
     width: 450px;
