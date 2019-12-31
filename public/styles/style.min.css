@@ -3893,7 +3893,8 @@ ul.simple li:before {
 .view {
     overflow: hidden;
     width: 100%;
-    position: relative
+    position: relative;
+    min-height: 100vh;
 }
 
 .view>.content {
@@ -3948,12 +3949,14 @@ ul.simple li:before {
 }
 
 body>section:first-of-type>.view:first-of-type>.content {
+    min-height: 100vh;
     padding-top: 80px;
     padding-bottom: 75px
 }
 
 @media (max-width:767px) {
     body>section:first-of-type>.view:first-of-type>.content {
+        min-height: 100vh;
         padding-top: 40px;
         padding-bottom: 40px
     }
@@ -5888,8 +5891,8 @@ html {
 
 .backRealisations {
     transform: rotateY(180deg);
-    background-color: #fff;
-    border: 2px solid #f0f0f0;
+    /*background-color: #fff;*/
+    /*border: 2px solid #f0f0f0;*/
 }
 .backRealisations .innerRealisations {
     background: white;
