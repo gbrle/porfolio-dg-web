@@ -32,76 +32,52 @@
 <body class="state1 background-100-e">
 
     <a href="{{ path("home") }}"> <button type="button" class="close" style="color: black; position: fixed; top: -15px; right: 10px">
-        <span aria-hidden="true">&times;</span>
+            <span aria-hidden="true">&times;</span>
     </button></a>
 
 
 
-    <section style="background: white;" class="animated bounceInDown">
-        <img alt="Profil David Gabriele" class="bgSectionsQuiSuisJe" src="images-sections/profil.png"/>
+    <section id="contact" class="animated bounceInDown">
 
         <div class="view">
-            <div class="content colors-e">
+            <div class="content colors-e background-solid" style="position: relative">
+
                 <div class="container">
+                    <img alt="Section contact de David Gabriele, développeur web sur lyon" class="bgSectionsContact" src="images-sections/team.png"/>
 
-                    <h2><span class="highlight">Q</span>ui suis-je ?</h2>
+                    <h2><span class="highlight">C</span>ontact</h2>
 
-                    <p class="header-details"><span class="highlight">David</span> Gabriele</p>
+                    <p class="header-details">Recruteur ? <span class="highlight">Particulier ?</span> Je vous réponds dans les <span class="highlight">plus brefs délais</span></p>
 
-                    <p class="lead" style="color: #767676">
-                        <span class="highlight" style="font-size: 1.5rem">D</span>avid 33 ans. Ancien restaurateur, j'ai entrepris ma reconversion en 2018.
-                        Je m'intéresse au <strong>multimédia</strong> et au <strong>développement web</strong> depuis mes 17 ans et développe des <strong>sites web</strong> pour particuliers de manière autodidacte.
-                    </p>
 
-                    <p class="lead" style="color: #767676">
-                        <span class="highlight" style="font-size: 1.5rem">J</span>e termine ma formation au campus "Wild Code School" en 2018 et
-                        obtient le titre de <strong>développeur web & mobile niveau 3</strong>. Une expérience professionelle dans le domaine du RGPD, plus précisément
-                        sur le CRM de l'activité et sur la création de plusieurs sites vitrines à la demande de divers clients, me forme d'avantage à l'univers du web.
-                    </p>
-
-                    <p class="lead" style="color: #767676">
-                        <span class="highlight" style="font-size: 1.5rem">J</span>e propose aujourd'hui mes services et met à disposition mes qualités de développeur
-                        passionné et rigoureux. Disponible pour un contrat en CDD / CDI, avec une préférence pour le framework "Symfony".
-                    </p>
-
-                    <div class="row" style="margin-top: 50px">
-                        <div class="col-md-4">
-                            <div class="col-icon">
-                                <i class="li_fire"></i>
-                            </div>
-                            <div class="col-content">
-                                <h4>Web <span class="highlight">Passion</span></h4>
-                                <p>
-                                    Passioné par la <strong>technologie</strong> en tout genre depuis mon plus jeune âge et plus particulierement par l'informatique, je me
-                                    concentre sur l'apprentissage des <strong>metiers du web</strong> au quotidien.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="col-icon">
-                                <i class="li_bulb"></i>
-                            </div>
-                            <div class="col-content">
-                                <h4>Web <span class="highlight">Logique</span></h4>
-                                <p>
-                                    Chaque problème a sa solution, je développe ce point important de la <strong>programmation</strong> (arriver au bout quoi qu'il en soit en trouvant les moyens les plus concis)
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="col-icon">
-                                <i class="li_note"></i>
-                            </div>
-                            <div class="col-content">
-                                <h4>Web <span class="highlight">Agile</span></h4>
-                                <p>
-                                    Le développement d'un projet se base avant tout sur la compréhension et le niveau de compléxité de celui-ci. Adopter un contact claire et précis à la base
-                                    est important.
-                                </p>
-                            </div>
+                    <div class="col-md-12">
+                        <div class="text-left">
+                            <form class="ajax-form" data-message-class="colors-e background-95 border heading" action="{{ path("send_mail") }}" method="post" novalidate="novalidate">
+                                <div class="row">
+                                    <div class="col-md-6 control-group">
+                                        <div class="alt-placeholder">Name</div>
+                                        <input type="text" name="your-name" value="" size="40" placeholder="Nom / Prénom" data-validation-required-message="Le champ n'a pas été renseigné correctement" required>
+                                        <div class="help-block"></div>
+                                    </div>
+                                    <div class="col-md-6 control-group">
+                                        <div class="alt-placeholder">Email</div>
+                                        <input type="email" name="your-email" value="" size="40" placeholder="Email" data-validation-required-message="Le champ n'a pas été renseigné correctement" required>
+                                        <div class="help-block"></div>
+                                    </div>
+                                    <div class="col-md-12 control-group">
+                                        <div class="alt-placeholder">Message</div>
+                                        <textarea name="your-message" placeholder="Votre demande" data-validation-required-message="Le champ n'a pas été renseigné correctement" required></textarea>
+                                        <div class="help-block"></div>
+                                    </div>
+                                    <div class="col-md-12 form-actions">
+                                        <input class="button" type="submit" value="Envoyer" style="background: #cb875f; color: white">
+                                    </div>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>

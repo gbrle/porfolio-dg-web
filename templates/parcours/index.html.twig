@@ -1,20 +1,438 @@
 <!DOCTYPE html>
+<html lang="fr" class="background-100-e" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Dg Web - Développeur Web Lyon - Diplomes & Certificats</title>
+    <meta name="description" content="Développeur web sur Lyon, je met à disposition mes connaissances pour la création de sites internet et le développement d'applications web." />
+    <meta name="keywords" content="Développeur web lyon, développement web, développeur freelance lyon, freelance, développeur symfony lyon, développeur symfony,
+    développeur php lyon, développeur php, création site internet lyon, création site internet pas cher, freelance pas cher lyon, création de site internet lyon par cher, html, css, symfony 4, php framework,
+    david gabriele, david gabriele lyon, dg web" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="bower_components/animate.css/animate.min.css" />
+    <link rel="stylesheet" href="bower_components/minicolors/jquery.minicolors.css" />
+    <link rel="stylesheet" href="bower_components/slick.js/slick/slick.css" />
+    <link rel="stylesheet" href="bower_components/slick.js/slick/slick-theme.css" />
+    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap-custom.min.css" />
+    <link rel="stylesheet" href="lib/linecons/style.css" />
+    <link rel="stylesheet" href="styles/style.min.css" />
+    <link rel="stylesheet" href="theme-custom.css" />
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="apple-touch-icon-152x152.png" />
+</head>
 
-<title>Hello ParcoursController!</title>
+<body class="state1 background-100-e">
 
-{% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
+    <a href="{{ path("home") }}"> <button type="button" class="close" style="color: black; position: fixed; top: -15px; right: 10px">
+        <span aria-hidden="true">&times;</span>
+    </button></a>
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
 
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ '/home/gbrle/Bureau/dg-portofolio/src/Controller/ParcoursController.php'|file_link(0) }}">src/Controller/ParcoursController.php</a></code></li>
-        <li>Your template at <code><a href="{{ '/home/gbrle/Bureau/dg-portofolio/templates/parcours/index.html.twig'|file_link(0) }}">templates/parcours/index.html.twig</a></code></li>
-    </ul>
-</div>
-{% endblock %}
+    <section class="animated bounceInDown">
+        <div class="view">
+            <div class="content colors-e background-solid" style="position: relative">
+
+                <div class="container">
+                    <img alt="Parcours et réalisations de David Gabriele, développeur web sur lyon" class="bgSectionsParcours" src="images-sections/team.png"/>
+
+                    <h2>Parcours <span class="highlight">&</span> Réalisations</h2>
+
+                    <p class="header-details">Découvrez ici mes <span class="highlight">expériences</span> professionnelle</p>
+
+                </div>
+                <div class="wrapperRealisations">
+
+                    <div class="cardRealisations">
+
+                        <input type="checkbox" id="wildCodeSchoolRealisations" class="moreRealisations" aria-hidden="true">
+                        <div class="contentRealisations">
+                            <div class="frontRealisations" style="background-image: url('images/realisations/wild.png')">
+                                <div class="innerRealisations">
+                                    {#                                                    <h2 class="titreCardRealisation">[ WILD CODE SCHOOL | 2018 ]</h2>#}
+                                    {#                                                    <h2>BAC + 2 Développement Web & Mobile</h2>#}
+
+                                    <label for="wildCodeSchoolRealisations" class="buttonRealisations" aria-hidden="true">
+                                        En savoir plus
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="backRealisations">
+                                <div class="innerRealisations">
+                                    <div class="descriptionRealisations">
+                                        <p class="text-center">
+                                            Formation en campus d'une durée de 5 mois.
+                                            Diplome Développeur Web & Mobile équivalent BAC + 2 obtenu.
+                                        </p>
+
+                                        <p class="text-center">
+                                            <i class="fa fa-cog fa-spin"></i>
+                                            PARCOURS :
+                                        </p>
+                                        <p class="text-center">
+                                            HTML / CSS / BOOTSTRAP / GIT / LINUX
+                                        </p>
+                                        <p class="text-center">
+                                            PHP / SQL et les bonnes conventions de codage (MVC, PSR ...)
+                                        </p>
+                                        <p class="text-center">
+                                            Symfony 4.2 et travail sur
+                                            un projet dans un groupe de 5 en méthode agile.
+                                        </p>
+                                    </div>
+                                    <div class="titreRealisations">[ WILD CODE SCHOOL | 2018 ]
+                                        <br>
+                                        <span class="text-danger">{ FORMATION }</span>
+                                    </div>
+
+                                    <a href="https://www.wildcodeschool.com/fr-FR" target="_blank" class="buttonRealisations" aria-hidden="true">
+                                        Visiter le site
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cardRealisations">
+
+                        <input type="checkbox" id="idpoRealisations" class="moreRealisations" aria-hidden="true">
+                        <div class="contentRealisations">
+                            <div class="frontRealisations" style="background-image: url('images/realisations/idpo.png')">
+                                <div class="innerRealisations">
+                                    {#                                                    <h2 class="titreCardRealisation">[ IDPO | 2018 -> 2019 ]</h2>#}
+                                    {#                                                    <h2>BAC + 2 Développement Web & Mobile</h2>#}
+
+                                    <label for="idpoRealisations" class="buttonRealisations" aria-hidden="true">
+                                        En savoir plus
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="backRealisations">
+                                <div class="innerRealisations">
+                                    <div class="descriptionRealisations">
+                                        <p class="text-center">
+                                            Stage en entreprise d'une durée de 2 mois suivit d'un CDD de 4 mois.
+                                        </p>
+                                        <p class="text-center">
+                                            Secteur d'activité dans le domaine du RGPD, j'ai pu travailler sur le CRM de l'entreprise
+                                            qui à pour but de gérer la clientèlle.
+                                            Travail avec la collaboration d'un développeur plus expérimenté.
+                                        </p>
+                                        <p class="text-center">
+                                            <i class="fa fa-cog fa-spin"></i>
+                                            Technos utilisées :
+                                        </p>
+                                        <p class="text-center">
+                                            HTML / CSS / JAVASCRIPT /  BOOTSTRAP / GIT / LINUX
+                                        </p>
+                                        <p class="text-center">
+                                            PHP / SQL et FRAMEWORK Symfony 3.4
+                                        </p>
+                                    </div>
+                                    <div class="titreRealisations">[ IDPO | 2018 -> 2019 ]
+                                        <br>
+                                        <span class="text-danger">{ STAGE & CDD }</span>
+                                    </div>
+
+                                    <a href="https://www.i-dpo.com/" target="_blank" class="buttonRealisations" aria-hidden="true">
+                                        Visiter le site
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cardRealisations">
+
+                        <input type="checkbox" id="rfbRealisations" class="moreRealisations" aria-hidden="true">
+                        <div class="contentRealisations">
+                            <div class="frontRealisations" style="background-image: url('images/realisations/rfb-lab-studio.png')">
+                                <div class="innerRealisations">
+                                    {#                                                    <h2 class="titreCardRealisation">[ RFB LAB STUDIO | 2020 ]</h2>#}
+                                    {#                                                    <h2>BAC + 2 Développement Web & Mobile</h2>#}
+
+                                    <label for="rfbRealisations" class="buttonRealisations" aria-hidden="true">
+                                        En savoir plus
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="backRealisations">
+                                <div class="innerRealisations">
+                                    <div class="descriptionRealisations">
+                                        <p class="text-center">
+                                            Confection d'un site vitrine représentant un ingénieur du son.
+                                            Celui-ci a pour but de mettre en avant son activité.
+                                        </p>
+                                        <p class="text-center">
+                                            <i class="fa fa-cog fa-spin"></i>
+                                            Technos utilisées :
+                                        </p>
+                                        <p class="text-center">
+                                            HTML / CSS / JAVASCRIPT /  BOOTSTRAP / GIT / LINUX
+                                        </p>
+                                        <p class="text-center">
+                                            PHP / SQL et framework Symfony 4.3
+                                        </p>
+                                        <p class="text-center">
+                                            Gestion du client et du projet dans sa totalité.
+                                        </p>
+                                    </div>
+                                    <div class="titreRealisations">[ RFB LAB STUDIO | 2020 ]
+                                        <br>
+                                        <span class="text-danger">{ FREELANCE }</span>
+                                    </div>
+
+                                    <a href="#" target="_blank" class="buttonRealisations" aria-hidden="true">
+                                        Bientôt disponible
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cardRealisations">
+
+                        <input type="checkbox" id="franceCalorifugeRealisations" class="moreRealisations" aria-hidden="true">
+                        <div class="contentRealisations">
+                            <div class="frontRealisations" style="background-image: url('images/realisations/france-calorifuge.png')">
+                                <div class="innerRealisations">
+                                    {#                                                    <h2 class="titreCardRealisation">[ RFB LAB STUDIO | 2020 ]</h2>#}
+                                    {#                                                    <h2>BAC + 2 Développement Web & Mobile</h2>#}
+
+                                    <label for="franceCalorifugeRealisations" class="buttonRealisations" aria-hidden="true">
+                                        En savoir plus
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="backRealisations">
+                                <div class="innerRealisations">
+                                    <div class="descriptionRealisations">
+                                        <p class="text-center">
+                                            Création d'un site vitrine représentant l'activité du client.
+                                        </p>
+                                        <p class="text-center">
+                                            Ce site à pour but de récolter des "leads" afin de les démarcher par la suite.
+                                        </p>
+                                        <p class="text-center">
+                                            <i class="fa fa-cog fa-spin"></i>
+                                            Technos utilisées :
+                                        </p>
+                                        <p class="text-center">
+                                            HTML / CSS / JAVASCRIPT /  BOOTSTRAP / PHP 7.2 / GIT / LINUX
+                                        </p>
+                                        <p class="text-center">
+                                            PHP
+                                        </p>
+                                        <p class="text-center">
+                                            Gestion du client et du projet dans sa totalité.
+                                        </p>
+                                    </div>
+                                    <div class="titreRealisations">[ FRANCE CALORIFUGE | 2018 ]
+                                        <br>
+                                        <span class="text-danger">{ FREELANCE }</span>
+                                    </div>
+
+                                    <a href="https://france-calorifuge-gratuit.com/" target="_blank" class="buttonRealisations" aria-hidden="true">
+                                        Visiter le site
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="cardRealisations">
+
+                        <input type="checkbox" id="franceIsolationRealisations" class="moreRealisations" aria-hidden="true">
+                        <div class="contentRealisations">
+                            <div class="frontRealisations" style="background-image: url('images/realisations/france-isolation.png')">
+                                <div class="innerRealisations">
+                                    {#                                                    <h2 class="titreCardRealisation">[ RFB LAB STUDIO | 2020 ]</h2>#}
+                                    {#                                                    <h2>BAC + 2 Développement Web & Mobile</h2>#}
+
+                                    <label for="franceIsolationRealisations" class="buttonRealisations" aria-hidden="true">
+                                        En savoir plus
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="backRealisations">
+                                <div class="innerRealisations">
+                                    <div class="descriptionRealisations">
+                                        <p class="text-center">
+                                            Création d'un site vitrine représentant l'activité du client.
+                                        </p>
+                                        <p class="text-center">
+                                            Ce site à pour but de récolter des "leads" afin de les démarcher par la suite.
+                                        </p>
+                                        <p class="text-center">
+                                            <i class="fa fa-cog fa-spin"></i>
+                                            Technos utilisées :
+                                        </p>
+                                        <p class="text-center">
+                                            HTML / CSS / JAVASCRIPT /  BOOTSTRAP / PHP 7.2 / GIT / LINUX
+                                        </p>
+                                        <p class="text-center">
+                                            PHP
+                                        </p>
+                                        <p class="text-center">
+                                            Gestion du client et du projet dans sa totalité.
+                                        </p>
+                                    </div>
+                                    <div class="titreRealisations">[ FRANCE ISOLATION | 2018 ]
+                                        <br>
+                                        <span class="text-danger">{ FREELANCE }</span>
+                                    </div>
+
+                                    <a href="http://www.france-isolation-gratuit.com/" target="_blank" class="buttonRealisations" aria-hidden="true">
+                                        Visiter le site
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="cardRealisations">
+
+                        <input type="checkbox" id="bostonRealisations" class="moreRealisations" aria-hidden="true">
+                        <div class="contentRealisations">
+                            <div class="frontRealisations" style="background-image: url('images/realisations/infographie-boston.png')">
+                                <div class="innerRealisations">
+                                    {#                                                    <h2 class="titreCardRealisation">[ RFB LAB STUDIO | 2020 ]</h2>#}
+                                    {#                                                    <h2>BAC + 2 Développement Web & Mobile</h2>#}
+
+                                    <label for="bostonRealisations" class="buttonRealisations" aria-hidden="true">
+                                        En savoir plus
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="backRealisations">
+                                <div class="innerRealisations">
+                                    <div class="descriptionRealisations">
+                                        <p class="text-center">
+                                            Confection de flyers événementiels pour le boston bar situé à Lyon. Le but de cette mission est
+                                            d'informer la clientelle via facebook des prochains événements sportifs diffusés dans le bar.
+                                        </p>
+                                        <p class="text-center">
+                                            Un des mes projets actuel est d'automatiser la génération de flyers via une API pour que le gérant puisse les faires lui même.
+                                        </p>
+                                        <p class="text-center">
+                                            <i class="fa fa-cog fa-spin"></i>
+                                            Technos utilisées :
+                                        </p>
+                                        <p class="text-center">
+                                            Photoshop CC
+                                        </p>
+                                    </div>
+                                    <div class="titreRealisations">[ FLYERS BOSTON BAR | 2016 -> 2020 ]
+                                        <br>
+                                        <span class="text-danger">{ FREELANCE }</span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+
+
+
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+<script>
+    if (typeof(atob) == "undefined")
+    {
+        document.write('<script src="lib/stringencoders-v3.10.3/javascript/base64.js"><\/script>');
+        var atob = function(x)
+        {
+            return base64.decode(x);
+        }
+    }
+</script>
+<script src="bower_components/less.js/dist/less.min.js"></script>
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="lib/tween/tween.min.js"></script>
+<script src="bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="lib/modernizr-edited.js"></script>
+<script src="lib/SmoothScroll-1.4.9/SmoothScroll.js"></script>
+<script src="bower_components/jquery-cookie/jquery.cookie.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+<script src="bower_components/jqBootstrapValidation/dist/jqBootstrapValidation-1.3.7.min.js"></script>
+<script src="bower_components/minicolors/jquery.minicolors.min.js"></script>
+<script src="bower_components/slick.js/slick/slick.min.js"></script>
+<script src="bower_components/shufflejs/dist/jquery.shuffle.min.js"></script>
+<script src="bower_components/textillate/assets/jquery.lettering.js"></script>
+<script src="bower_components/textillate/assets/jquery.fittext.js"></script>
+<script src="bower_components/textillate/jquery.textillate.js"></script>
+<script src="lib/prism/prism.js"></script>
+
+<script>
+    $("#click").click(function(){
+        $("#nav").toggleClass("closed");
+    });
+</script>
+<script>
+    (function()
+    {
+        var disableMobileAnimations = true;
+        var isWin = navigator.appVersion.indexOf("Win") !== -1;
+        if (isWin) $('html').addClass('win');
+        var ua = navigator.userAgent.toLowerCase();
+        var isChrome = ua.indexOf('chrome') > -1;
+        if (isChrome) $('html').addClass('chrome');
+        var isAndroidBrowser4_3minus = ((ua.indexOf('mozilla/5.0') > -1 && ua.indexOf('android ') > -1 && ua.indexOf('applewebkit') > -1) && !(ua.indexOf('chrome') > -1));
+        if (isAndroidBrowser4_3minus) $('html').addClass('android-browser-4_3minus');
+        var isSafari = !isChrome && ua.indexOf('safari') !== -1;
+        if (isSafari) $('html').addClass('safari');
+        var isMobile = false; //Change false to Modernizr.touch if you want to disable animations on touchscreen devices;
+        if (isMobile)
+        {
+            $('html').addClass('mobile');
+            if (disableMobileAnimations) $('html').addClass('poor-browser');
+        }
+        else
+        {
+            $('html').addClass('non-mobile');
+        }
+        if (isWin && isSafari)
+        {
+            $('html').addClass('flat-animation');
+        }
+    })();
+</script>
+<script src="scripts/script-bundle.js"></script>
+<script>
+    if (Function('/*@cc_on return document.documentMode===9@*/')())
+    {
+        $('html').addClass('ie9');
+    }
+    if (Function('/*@cc_on return document.documentMode===10@*/')())
+    {
+        $('html').addClass('ie10');
+    }
+    if (!!navigator.userAgent.match(/Trident.*rv\:11\./))
+    {
+        $('html').addClass('ie11');
+    }
+</script>
+</body>
+</html>
