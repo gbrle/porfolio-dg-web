@@ -60,32 +60,43 @@
                     <p class="header-details">Recruteur ? <span class="highlight">Particulier ?</span> Je vous réponds dans les <span class="highlight">plus brefs délais</span></p>
 
 
-                    <div class="col-md-12">
-                        <div class="text-left">
-                            <form class="ajax-form" data-message-class="colors-e background-95 border heading" action="{{ path("send_mail") }}" method="post" novalidate="novalidate">
-                                <div class="row">
-                                    <div class="col-md-6 control-group">
-                                        <div class="alt-placeholder">Name</div>
-                                        <input type="text" name="your-name" value="" size="40" placeholder="Nom / Prénom" data-validation-required-message="Le champ n'a pas été renseigné correctement" required>
-                                        <div class="help-block"></div>
-                                    </div>
-                                    <div class="col-md-6 control-group">
-                                        <div class="alt-placeholder">Email</div>
-                                        <input type="email" name="your-email" value="" size="40" placeholder="Email" data-validation-required-message="Le champ n'a pas été renseigné correctement" required>
-                                        <div class="help-block"></div>
-                                    </div>
-                                    <div class="col-md-12 control-group">
-                                        <div class="alt-placeholder">Message</div>
-                                        <textarea name="your-message" placeholder="Votre demande" data-validation-required-message="Le champ n'a pas été renseigné correctement" required></textarea>
-                                        <div class="help-block"></div>
-                                    </div>
-                                    <div class="col-md-12 form-actions">
-                                        <input class="button" type="submit" value="Envoyer" style="background: #cb875f; color: white">
-                                    </div>
-                                </div>
-                            </form>
+                    <div class="row counters">
+                        <div class="col-md-6 counter background-25-b">
+                            <div class="row heading background-10-light"><i class="fa fa-envelope-square fa-4x"></i></div>
+                            <div class="caption" style="font-weight: bold">david@dg-web.fr</div>
+                        </div>
+                        <div class="col-md-6 counter background-35-h">
+                            <div class="row heading background-10-light"><i class="fa fa-phone fa-4x"></i></div>
+                            <div class="caption" style="font-weight: bold">06.09.65.52.99</div>
                         </div>
                     </div>
+
+{#                    <div class="col-md-12">#}
+{#                        <div class="text-left">#}
+{#                            <form class="ajax-form" data-message-class="colors-e background-95 border heading" action="{{ path("send_mail") }}" method="post" novalidate="novalidate">#}
+{#                                <div class="row">#}
+{#                                    <div class="col-md-6 control-group">#}
+{#                                        <div class="alt-placeholder">Name</div>#}
+{#                                        <input type="text" name="your-name" value="" size="40" placeholder="Nom / Prénom" data-validation-required-message="Le champ n'a pas été renseigné correctement" required>#}
+{#                                        <div class="help-block"></div>#}
+{#                                    </div>#}
+{#                                    <div class="col-md-6 control-group">#}
+{#                                        <div class="alt-placeholder">Email</div>#}
+{#                                        <input type="email" name="your-email" value="" size="40" placeholder="Email" data-validation-required-message="Le champ n'a pas été renseigné correctement" required>#}
+{#                                        <div class="help-block"></div>#}
+{#                                    </div>#}
+{#                                    <div class="col-md-12 control-group">#}
+{#                                        <div class="alt-placeholder">Message</div>#}
+{#                                        <textarea name="your-message" placeholder="Votre demande" data-validation-required-message="Le champ n'a pas été renseigné correctement" required></textarea>#}
+{#                                        <div class="help-block"></div>#}
+{#                                    </div>#}
+{#                                    <div class="col-md-12 form-actions">#}
+{#                                        <input class="button" type="submit" value="Envoyer" style="background: #cb875f; color: white">#}
+{#                                    </div>#}
+{#                                </div>#}
+{#                            </form>#}
+{#                        </div>#}
+{#                    </div>#}
                 </div>
 
             </div>
