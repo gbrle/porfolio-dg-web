@@ -69,12 +69,12 @@
                                     {#                                                    <h2 class="titreCardRealisation">[ WILD CODE SCHOOL | 2018 ]</h2>#}
                                     {#                                                    <h2>BAC + 2 Développement Web & Mobile</h2>#}
 
-                                    <label for="wildCodeSchoolRealisations" class="buttonRealisations" aria-hidden="true">
+                                    <label id="ButtonWildCodeSchoolRealisations" for="wildCodeSchoolRealisations" class="buttonRealisations" aria-hidden="true">
                                         En savoir plus
                                     </label>
                                 </div>
                             </div>
-                            <div class="backRealisations">
+                            <div class="backRealisations d-none" id="DescriptionWildCodeSchoolRealisations">
                                 <div class="innerRealisations">
                                     <div class="descriptionRealisations">
                                         <p class="text-center">
@@ -445,6 +445,14 @@
     {
         $('html').addClass('ie11');
     }
+</script>
+<script>
+    // Logic for card réalisations
+    let ButtonWildCodeSchoolRealisations = document.getElementById('ButtonWildCodeSchoolRealisations');
+    let DescriptionWildCodeSchoolRealisations = document.getElementById('DescriptionWildCodeSchoolRealisations');
+    ButtonWildCodeSchoolRealisations.addEventListener("click", function (e) {
+        DescriptionWildCodeSchoolRealisations.classList.remove('d-none');
+    });
 </script>
 </body>
 </html>

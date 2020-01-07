@@ -1,7 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,700,500,600,300,200,100,800,900);
 
 
-
+.d-none{
+    display: none;
+}
 .circleNav {
     z-index: 1222222222222;
     position: fixed;
