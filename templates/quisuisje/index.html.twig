@@ -127,7 +127,7 @@
 <script>
     if (typeof(atob) == "undefined")
     {
-        document.write('<script src="lib/stringencoders-v3.10.3/javascript/base64.js"><\/script>');
+        document.createElement('<script src="lib/stringencoders-v3.10.3/javascript/base64.js"><\/script>');
         var atob = function(x)
         {
             return base64.decode(x);
